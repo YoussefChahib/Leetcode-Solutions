@@ -11,3 +11,18 @@ public bool IsPalindrome(int x)
     }
     return true;
 }
+
+public bool IsPalindrome2(int x)
+{
+    if (x < 0) return false;
+    int reversed = 0;
+    int original = x;
+    while (original > 0)
+    {
+        int d = original % 10;
+        reversed = reversed * 10 + d;
+        original /= 10;
+    }
+    if (reversed == x) return true;
+    return false;
+}
