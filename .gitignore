@@ -216,3 +216,61 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Build results
+[Bb]in/
+[Oo]bj/
+out/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]rtifacts/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / VS Code
+.vscode/
+.vs/
+.idea/
+*.code-workspace
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Dotnet generated files
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$
+
+# Dotnet user secrets
+secrets.json
