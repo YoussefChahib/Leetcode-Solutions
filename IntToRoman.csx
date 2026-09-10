@@ -94,5 +94,3 @@ public string IntToRoman2(int num)
     }
     return s;
 }
-
-Console.WriteLine(IntToRoman2(1994));
