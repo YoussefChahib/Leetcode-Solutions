@@ -1,34 +1,14 @@
 public int MaxArea(int[] height)
 {
     int max = 0;
-    for (int i = 0; i < (int)(height.Length / 2); i++)
-    {
-        for (int j = i; j < (height.Length / 2); j++)
-        {
-            int current = Math.Min(height[i], height[j]) * (j - i);
-            if (current > max) max = current;
-        }
-        for (int j = (height.Length / 2); j < height.Length; j++)
-        {
-            int current = Math.Min(height[i], height[j]) * (j - i);
-            if (current > max) max = current;
-        }
-    }
-
-    for (int i = (height.Length / 2); i < height.Length; i++)
+    for (int i = 0; i < height.Length; i++)
     {
         for (int j = i; j < height.Length; j++)
         {
             int current = Math.Min(height[i], height[j]) * (j - i);
             if (current > max) max = current;
         }
-        for (int j = (height.Length / 2); j < height.Length; j++)
-        {
-            int current = Math.Min(height[i], height[j]) * (j - i);
-            if (current > max) max = current;
-        }
     }
-
     return max;
 }
 
@@ -46,6 +26,5 @@ public int MaxArea(int[] height)
     }
     return max;
 }
-
 
 Console.WriteLine(MaxArea2([1, 8, 6, 2, 5, 4, 8, 3, 7]));
